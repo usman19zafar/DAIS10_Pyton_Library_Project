@@ -1,181 +1,64 @@
-DAIS-10 Mini
-Deterministic Schema-Driven Completeness Scoring Utility
+# DAIS‑10 Mini  
+**Deterministic Schema‑Driven Completeness Scoring Utility**
 
-DAIS-10 Mini is a lightweight Python library that computes weighted completeness scores for tabular datasets using an explicit schema definition.
+DAIS‑10 Mini is a lightweight Python library for computing **weighted completeness scores** for tabular datasets using an **explicit schema definition**. It is designed for **educational, exploratory, and baseline data‑quality assessment**, not for governance, compliance, or semantic interpretation.
 
-This library is intended for educational, exploratory, and baseline data quality assessment use.
+---
 
-It is not a governance, compliance, or semantic analysis framework.
+## Features
+- Weighted completeness scoring  
+- Schema‑controlled evaluation  
+- Required‑field enforcement  
+- Deterministic, repeatable outputs  
+- Explicit failure signaling  
+- Minimal, simple interface  
 
-Installation
+---
+
+## Installation
+```bash
 pip install dais10mini
-Core Model
+```
+## Core Model
 
-Given dataset 
+Schema Definition
+
+A dataset 
 𝐷
-D with 
+ with 
 𝑛
-n rows and schema:
+ rows is evaluated against a schema:
 
-𝑆
-=
-{
-(
-𝑓
-𝑖
-,
-𝑤
-𝑖
-)
-}
-𝑖
-=
-1
-𝑘
-S={(f
-i
-	​
-
-,w
-i
-	​
-
-)}
-i=1
-k
-	​
-
-
+```md
+S = { (f_i, w_i) } for i = 1..k
+```
 Where:
+```md
+f_i — field name
 
-𝑓
-𝑖
-f
-i
-	​
-
- = field name
-
-𝑤
-𝑖
->
-0
-w
-i
-	​
-
->0 = weight
-
-Field completeness ratio:
-
-𝑐
-𝑖
-=
-non-null count of 
-𝑓
-𝑖
-𝑛
-c
-i
-	​
-
-=
-n
-non-null count of f
-i
-	​
-
-	​
-
-
-Weighted dataset score:
-
-𝑆
-𝑐
-𝑜
-𝑟
-𝑒
-=
-∑
-𝑖
-=
-1
-𝑘
-𝑤
-𝑖
-𝑐
-𝑖
-∑
-𝑖
-=
-1
-𝑘
-𝑤
-𝑖
-Score=
-∑
-i=1
-k
-	​
-
-w
-i
-	​
-
-∑
-i=1
-k
-	​
-
-w
-i
-	​
-
-c
-i
-	​
-
-	​
-
+w_i > 0 — weight
+```
+Field Completeness Ratio
+```md
+c_i = (non‑null count of f_i) / n
+Weighted Dataset Score
+```
+```md
+Score = ( Σ (w_i * c_i) ) / ( Σ w_i )
+```
 Deterministic Guarantee
-
-For fixed input dataset 
+For fixed dataset 
 𝐷
-D and schema 
+ and schema 
 𝑆
-S:
+:
 
-𝑓
-(
-𝐷
-,
-𝑆
-)
-→
-𝑆
-𝑐
-𝑜
-𝑟
-𝑒
-f(D,S)→Score
-
-Repeated execution produces identical output.
-
-Features
-
-Weighted completeness scoring
-
-Schema-controlled evaluation
-
-Required field enforcement
-
-Deterministic outputs
-
-Explicit failure signaling
-
-Simple utility interface
-
+```md
+f(D, S) → Score
+Repeated execution always yields identical results.
+```
 Example
+```python
 import pandas as pd
 from dais10mini import evaluate
 
@@ -192,52 +75,46 @@ schema = [
 result = evaluate(data, schema)
 
 print(result.score)
-Output Structure
-result.score → float (0 to 1)
+```
+## Output Structure
+result.score → float in 
+[ 0 , 1 ]
 
-result.field_scores → per-field completeness metrics
+result.field_scores → per‑field completeness metrics
 
-result.incomplete_required → list of required fields missing values
-Edge Case Behavior
+result.incomplete_required → list of required fields with missing values
+
+## Edge Case Behavior
 Condition	Response
 Empty dataset	Raises ValueError
 Missing schema	Raises ValueError
 Zero total weight	Raises ValueError
 Unknown field	Raises ValueError
+Silent fallback behavior is not permitted.
 
-Silent fallback behavior is not allowed.
+Non‑Goals
+DAIS‑10 Mini does not work as commercial version of Dais10, Images of full version and test results are included in github folder:
 
-Non Goals
+	Semantic interpretation
+	Compliance certification
+	Temporal drift modeling
+	Fraud detection
+	Regulatory enforcement
 
-DAIS-10 Mini does NOT provide:
+It is strictly a deterministic scoring utility.
 
-Semantic interpretation
-
-Compliance certification
-
-Temporal drift modeling
-
-Fraud detection
-
-Regulatory enforcement
-
-It is a deterministic scoring utility.
-
-Version Philosophy
-
+# Version Philosophy
 Minor versions → internal improvements
 
-Major versions → scoring model change
+Major versions → scoring model changes
 
-Score formula modification requires major version upgrade.
+Any modification to the scoring formula requires a major version upgrade.
 
-License
-
+# License
 Apache License 2.0
 
-Author
-
+# Author
 Dr. Usman Zafar
 
-Repository:
+Repository
 https://github.com/usman19zafar/DAIS10_Pyton_Library_Project
