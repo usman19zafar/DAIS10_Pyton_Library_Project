@@ -1,26 +1,21 @@
-[build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "dais10mini"
 version = "1.1.3"
-description = "DAIS-10 Mini - Lightweight deterministic data quality analysis library"
+description = "DAIS-10 Mini - Lightweight data quality analysis library"
 readme = "README.md"
-authors = [
-    { name = "Dr. Usman Zafar", email = "usman19zafar@gmail.com" }
-]
+license = "Apache-2.0"
 
-license = { text = "Apache-2.0" }
+authors = [
+    { name="Dr. Usman Zafar", email="usman19zafar@gmail.com" }
+]
 
 requires-python = ">=3.8"
 
-keywords = ["data-quality", "governance", "semantic-analysis", "dais10"]
+keywords = ["data-quality","governance","semantic-analysis","dais10"]
 
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
-    "Topic :: Scientific/Engineering :: Information Analysis",
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: Apache Software License"
 ]
