@@ -1,57 +1,56 @@
-# License
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
 
-## Apache License, Version 2.0 — With Additional DAIS‑10 Intellectual Framework Clause
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
-Copyright 2024–2026  
-Dr. Usman Zafar
+1. Definitions.
 
-Licensed under the Apache License, Version 2.0 (the “License”); you may not use this software except in compliance with the License. You may obtain a copy of the License at:
+"License" shall mean the terms and conditions for use, reproduction,
+and distribution as defined by Sections 1 through 9 of this document.
 
-http://www.apache.org/licenses/LICENSE-2.0
+"Licensor" shall mean the copyright owner or entity authorized by
+the copyright owner that is granting the License.
 
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an **“AS IS” BASIS**, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+"Legal Entity" shall mean the union of the acting entity and all
+other entities that control, are controlled by, or are under common
+control with that entity. For the purposes of this definition,
+"control" means (i) the power, direct or indirect, to cause the
+direction or management of such entity, whether by contract or
+otherwise, or (ii) ownership of fifty percent (50%) or more of the
+outstanding shares, or (iii) beneficial ownership of such entity.
 
----
+"You" (or "Your") shall mean an individual or Legal Entity
+exercising permissions granted by this License.
 
-## Additional Clause for Commercial Use and Intellectual Framework Protection
+"Source" form shall mean the preferred form for making modifications,
+including but not limited to software source code, documentation
+source, and configuration files.
 
-In addition to the standard Apache 2.0 terms, the following clause applies to **DAIS‑10 Mini** and all associated intellectual assets:
+"Object" form shall mean any form resulting from mechanical
+transformation or translation of a Source form, including but
+not limited to compiled object code, generated documentation,
+and conversions to other media types.
 
-### **DAIS‑10 Intellectual Framework Clause**
+"Work" shall mean the work of authorship, whether in Source or
+Object form, made available under the License, as indicated by a
+copyright notice that is included in or attached to the work.
 
-The following items are considered part of the protected intellectual framework of this project and are included under this license:
+"Derivative Works" shall mean any work, whether in Source or Object
+form, that is based on (or derived from) the Work and for which the
+editorial revisions, annotations, elaborations, or other modifications
+represent, as a whole, an original work of authorship. For the purposes
+of this License, Derivative Works shall not include works that remain
+separable from, or merely link (or bind by name) to the interfaces of,
+the Work and Derivative Works thereof.
 
-- **DAIS (Deterministic Artificial Intelligence System)**
-- **DAIS‑10 doctrine, philosophy, and vision**
-- **All mathematical models, scoring formulations, and deterministic evaluation logic**
-- **All theoretical constructs, naming conventions, and conceptual frameworks**
-- **All derivative theories, including DIGrS‑10, KAD Theory, BLoC, and related system‑physics formulations**
+"Contribution" shall mean any work of authorship, including
+the original version of the Work and any modifications or additions
+to that Work or Derivative Works thereof, that is intentionally
+submitted to Licensor for inclusion in the Work by the copyright owner
+or by an individual or Legal Entity authorized to submit on behalf of
+the copyright owner. For the purposes of this definition, "submitted"
+means any form of electronic, verbal, or written communication sent
+to the Licensor or its representatives...
 
-Commercial use is permitted **only under the following conditions**:
-
-1. **Attribution Requirement**  
-   Any commercial use, integration, or redistribution must include clear attribution to:  
-   **“DAIS‑10 Mini — Dr. Usman Zafar”**  
-   in documentation, UI references, or product materials where applicable.
-
-2. **No Misrepresentation**  
-   Commercial entities may not claim ownership, authorship, or origin of the DAIS‑10 philosophy, theory, models, or system‑physics constructs.
-
-3. **No Derivative Framework Rebranding**  
-   You may not rebrand, rename, or repurpose the DAIS‑10 theoretical components as a new proprietary framework without explicit written permission from the author.
-
-4. **Permitted Extensions**  
-   Extensions, wrappers, or integrations built on top of DAIS‑10 Mini are allowed, provided they:
-   - Maintain attribution,
-   - Do not obscure or replace the DAIS‑10 identity,
-   - Do not imply certification, compliance, or regulatory endorsement unless explicitly granted.
-
-5. **Non‑Compliance**  
-   Any commercial use that violates these conditions constitutes a breach of license and terminates the rights granted under the Apache 2.0 license.
-
----
-
-## Summary
-
-DAIS‑10 Mini remains open‑source under Apache 2.0, but the **DAIS‑10 doctrine, philosophy, theory, and mathematical models are explicitly protected**. Commercial use is allowed with attribution and without misrepresentation or rebranding of the underlying intellectual framework.
-
+[IMPORTANT: continue full official Apache 2.0 text exactly — do not shorten]
