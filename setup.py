@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="dais10mini",
-    version="1.1.3",
+    version="1.1.5",
     description="DAIS-10 Mini - Lightweight data quality analysis library",
     long_description=long_description,
     long_description_content_type="text/markdown",
